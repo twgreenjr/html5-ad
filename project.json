@@ -1,0 +1,10 @@
+{
+    "adName":   "ExampleAd",
+    "width":    "300",
+    "height":   "250",
+    "paths": {
+        "output":   "output",
+        "deploy":   "deploy",
+        "temp":     "temp"
+    }
+}

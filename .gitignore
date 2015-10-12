@@ -1,0 +1,6 @@
+node_modules/
+bower_components/
+temp/
+output/
+deploy/
+.DS_Store
