@@ -9,7 +9,8 @@ Automation, through Grunt, for a basic HTML5 ad.
 4. Profit!
 
 ## Structure
-1. `js/`: Script files.  All scripts go here.
+1. `js/`: Script files.  All scripts go here and will be automatically 
+concatenated.
 2. `css/`: Styles. LESS will compile from `style.less`, so include any other 
 files through this file.
 3. `resources/`: Things that may need to be included.
@@ -25,4 +26,12 @@ avoid touching the `<head>` area unless you know what you're doing.
 - `grunt watch`: Compile JavaScript and LESS after each change is saved.
 - `grunt deploy`: Compile, minify, encode images to CSS, output zip to 
 `deploy/` for upload.
+
+## Future Features
+- Support for SASS option
+- Multiple deploy targets, add output for Sizmek, DoubleClick, Google Display Network, 
+Conversant, etc.  Currently only setup for Sizmek.
+- Generator to build framework/boilerplate for common sizes.
+- Autoreload.
+- Add jshint, basic functionality tests.
 
