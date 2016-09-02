@@ -1,0 +1,24 @@
+// tweens_LIB/fade/fadeOutUp.less
+// =============================================================================
+    
+    //====================
+    //==== Property =====
+    //====================
+    @fadeOutUp_Opacity_1:   	1;
+    @fadeOutUp_Opacity_0:     	0;
+    @fadeOutUp_Y:     			-100%;
+    @fadeOutUp_No_Value:     	0;
+
+    //====================
+    //==== keyframe =====
+    //====================
+	@keyframes fadeOutUp {
+	  from {
+	    opacity: @fadeOutUp_Opacity_1;
+	  }
+
+	  to {
+	    opacity: @fadeOutUp_Opacity_0;
+	    transform: translate3d(@fadeOutUp_No_Value, -100%, @fadeOutUp_No_Value);
+	  }
+	}

@@ -1,0 +1,49 @@
+// tweens_LIB/misc/headShake.less
+// =============================================================================
+    //====================
+    //==== Property =====
+    //====================
+    @headShake_translateX_0:          0;
+
+    @headShake_6_5_translateX:        -6px;
+    @headShake_6_5_rotateY:           -9deg;
+    
+    @headShake_18_5_translateX:       5px;
+    @headShake_18_5_rotateY:          7deg;
+    
+    @headShake_31_5_translateX:       -3px;
+    @headShake_31_5_rotateY:          -5deg;
+    
+    @headShake_43_5_translateX:       2px;
+    @headShake_43_5_rotateY:          3deg;
+
+    @headShake_50_translateX:         0;
+    
+    //====================
+    //==== keyframe =====
+    //====================
+    @keyframes headShake {
+      0% {
+        transform: translateX(0);
+      }
+
+      6.5% {
+        transform: translateX(@headShake_6_5_translateX) rotateY(@headShake_6_5_rotateY);
+      }
+
+      18.5% {
+        transform: translateX(@headShake_18_5_translateX) rotateY(@headShake_18_5_rotateY);
+      }
+
+      31.5% {
+        transform: translateX(@headShake_31_5_translateX) rotateY(@headShake_31_5_rotateY);
+      }
+
+      43.5% {
+        transform: translateX(@headShake_43_5_translateX) rotateY(@headShake_43_5_rotateY);
+      }
+
+      50% {
+        transform: translateX(@headShake_50_translateX);
+      }
+    }

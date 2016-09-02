@@ -1,0 +1,53 @@
+// tweens_LIB/fade/bounce_horizonial.less
+// =============================================================================
+    
+    //====================
+    //==== Property =====
+    //====================
+    @bounce_horizonial_Y: -25;
+    @bounce_horizonial_X: 0px;
+
+    //====================
+    //==== keyframe =====
+    //====================
+    @keyframes bounce_horizonial{
+      
+      0% {
+        transform:  translate(@bounce_horizonial_X,@bounce_horizonial_X)  ;
+      }
+      
+      15% {
+        transform:  translate(@bounce_horizonial_X, @bounce_horizonial_Y)  ;
+      }
+      
+      30% {
+        transform:  translate(@bounce_horizonial_X,@bounce_horizonial_X)  ;
+      }
+      
+      45% {
+        transform:  translate(@bounce_horizonial_X,(@bounce_horizonial_Y + 10%))  ;
+      }
+      
+      60% {
+        transform:  translate(@bounce_horizonial_X,@bounce_horizonial_X)  ;
+      }
+      
+      75% {
+        transform:  translate(@bounce_horizonial_X,(@bounce_horizonial_Y + 20%))  ;
+      }
+      
+      100% {
+        transform:  translate(@bounce_horizonial_X,@bounce_horizonial_X)  ;
+      }
+
+    }
+
+
+
+    
+    
+
+    
+
+
+

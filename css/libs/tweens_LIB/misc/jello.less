@@ -1,0 +1,65 @@
+// tweens_LIB/misc/jello.less
+// =============================================================================
+    //====================
+    //==== Property =====
+    //====================
+    @jello_From_transform:              none;
+    
+    @jello_22_2_skewX:             -12.5deg;
+    @jello_22_2_skewY:             -12.5deg;
+
+    @jello_33_3_skewX:             6.25deg;
+    @jello_33_3_skewY:             6.25deg;
+
+    @jello_44_4_skewX:             -3.125deg;
+    @jello_44_4_skewY:             -3.125deg;
+
+    @jello_55_5_skewX:             1.5625deg;
+    @jello_55_5_skewY:             1.5625deg;
+
+    @jello_66_6_skewX:             -0.78125deg;
+    @jello_66_6_skewY:             -0.78125deg;
+
+    @jello_77_7_skewX:             0.390625deg;
+    @jello_77_7_skewY:             0.390625deg;
+
+    @jello_88_8_skewX:             -0.1953125deg;
+    @jello_88_8_skewY:             -0.1953125deg;
+   
+
+    //====================
+    //==== keyframe =====
+    //====================
+    @keyframes jello {
+      from, 11.1%, to {
+        transform: @jello_From_transform;
+      }
+
+      22.2% {
+        transform: skewX(@jello_22_2_skewX) skewY(@jello_22_2_skewY);
+      }
+
+      33.3% {
+        transform: skewX(@jello_22_2_skewX) skewY(@jello_33_3_skewY);
+      }
+
+      44.4% {
+        transform: skewX(@jello_44_4_skewX) skewY(@jello_44_4_skewY);
+      }
+
+      55.5% {
+        transform: skewX(@jello_55_5_skewX) skewY(@jello_55_5_skewY);
+      }
+
+      66.6% {
+        transform: skewX(@jello_66_6_skewX) skewY(@jello_66_6_skewY);
+      }
+
+      77.7% {
+        transform: skewX(@jello_77_7_skewX) skewY(@jello_77_7_skewY);
+      }
+
+      88.8% {
+        transform: skewX(@jello_88_8_skewX) skewY(@jello_88_8_skewY);
+      }
+    }

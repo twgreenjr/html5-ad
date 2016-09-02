@@ -1,0 +1,49 @@
+// tweens_LIB/fadeIn/fadeInLeft.less
+// =============================================================================
+    
+    //====================
+    //==== Property =====
+    //====================
+    @fadeInLeft_0_value:   		0;
+    @fadeInLeft_100_percent:   	-100%;
+    @fadeInLeft_to:     		none;
+    @fadeInLeft_opacity_0:		0;
+    @fadeInLeft_opacity_1:		1;
+
+
+    //====================
+    //==== keyframe =====
+    //====================
+	@keyframes fadeInLeft {
+	  from {
+	    transform: translate3d(@fadeInLeft_100_percent, @fadeInLeft_0_value, @fadeInLeft_0_value);
+	  }
+
+	  to {
+	    transform: none;
+	  }
+	}
+
+	@keyframes fadeInLeft_fadeIn {
+	  from {
+	    opacity: @fadeInLeft_opacity_0;
+	    transform: translate3d(@fadeInLeft_100_percent, @fadeInLeft_0_value, @fadeInLeft_0_value);
+	  }
+
+	  to {
+	    opacity: @fadeInLeft_opacity_1;
+	    transform: none;
+	  }
+	}
+
+	@keyframes fadeInLeft_fadeOut {
+	  from {
+	    opacity: @fadeInLeft_opacity_1;
+	    transform: translate3d(@fadeInLeft_100_percent, @fadeInLeft_0_value, @fadeInLeft_0_value);
+	  }
+
+	  to {
+	    opacity: @fadeInLeft_opacity_0;
+	    transform: none;
+	  }
+	}

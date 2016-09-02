@@ -1,0 +1,41 @@
+// tweens_LIB/bounce/bounceInUp.less
+// =============================================================================
+//====================
+    //==== Property =====
+    //====================
+    @bounceInUp_from:          3000px;
+    @bounceInUp_60_percent:    -20px;
+    @bounceInUp_75_percent:   10px;
+    @bounceInUp_90_percent:   -5px;
+    @bounceInUp_0_value:   0px;
+    @easePattern:           cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    //====================
+    //==== keyframe =====
+    //====================
+    @keyframes bounceInUp {
+      from, 60%, 75%, 90%, to {
+        animation-timing-function: @easePattern;
+      }
+
+      from {
+        opacity: 0;
+        transform: translate3d(@bounceInUp_0_value, @bounceInUp_from, @bounceInUp_0_value);
+      }
+
+      60% {
+        opacity: 1;
+        transform: translate3d(@bounceInUp_0_value, @bounceInUp_60_percent, @bounceInUp_0_value);
+      }
+
+      75% {
+        transform: translate3d(@bounceInUp_0_value, @bounceInUp_75_percent, @bounceInUp_0_value);
+      }
+
+      90% {
+        transform: translate3d(@bounceInUp_0_value, @bounceInUp_90_percent, @bounceInUp_0_value);
+      }
+
+      to {
+        transform: translate3d(@bounceInUp_0_value, @bounceInUp_0_value, @bounceInUp_0_value);
+      }
+    }

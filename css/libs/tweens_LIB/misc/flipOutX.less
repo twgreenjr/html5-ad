@@ -1,0 +1,42 @@
+// tweens_LIB/misc/flipOutX.less
+// =============================================================================
+    //====================
+    //==== Property =====
+    //====================
+    @flipOutX_From_perspective:         400px;
+    
+    @flipOutX_30_perspective:           400px;
+    @flipOutX_30_X:                     1;
+    @flipOutX_30_Y:                     0;
+    @flipOutX_30_Z:                     0;
+    @flipOutX_30_A:                     -20deg;
+
+    @flipOutX_To_perspective:           400px;
+    @flipOutX_To_X:                     1;
+    @flipOutX_To_Y:                     0;
+    @flipOutX_To_Z:                     0;
+    @flipOutX_To_A:                     90deg;
+
+    @flipOutX_Opacity_1:               1;
+    @flipOutX_Opacity_0:               0;
+
+    
+    
+    //====================
+    //==== keyframe =====
+    //====================
+    @keyframes flipOutX {
+      from {
+        transform: perspective(@flipOutX_From_perspective);
+      }
+
+      30% {
+        transform: perspective(@flipOutX_30_perspective) rotate3d(@flipOutX_30_X, @flipOutX_30_Y, @flipOutX_30_Z, @flipOutX_30_A);
+        opacity: @flipOutX_Opacity_1;
+      }
+
+      to {
+        transform: perspective(@flipOutX_To_perspective) rotate3d(@flipOutX_To_X, @flipOutX_To_Y, @flipOutX_To_Z, @flipOutX_To_A);
+        opacity: @flipOutX_Opacity_0;
+      }
+    }

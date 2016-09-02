@@ -1,0 +1,41 @@
+// tweens_LIB/fade/fadeOutDown.less
+// =============================================================================
+    
+    //====================
+    //==== Property =====
+    //====================
+    @fadeOutDown_Opacity_0:   	1;
+    @fadeOutDown_Opacity_1:     0;
+    @fadeOutDown_Y:     		110%;
+    @fadeOutDown_No_Value:  	0;
+
+    //====================
+    //==== keyframe =====
+    //====================
+	@keyframes fadeOutDown {
+	  to {
+	    transform: translate3d(@fadeOutDown_No_Value, @fadeOutDown_Y, @fadeOutDown_No_Value);
+	  }
+	}
+
+	@keyframes fadeOutDown_FadeIn {
+	  from {
+	    opacity: @fadeOutDown_Opacity_0;
+	  }
+
+	  to {
+	    opacity: @fadeOutDown_Opacity_1;
+	    transform: translate3d(@fadeOutDown_No_Value, @fadeOutDown_Y, @fadeOutDown_No_Value);
+	  }
+	}
+
+	@keyframes fadeOutDown_FadeOut {
+	  from {
+	    opacity: @fadeOutDown_Opacity_1;
+	  }
+
+	  to {
+	    opacity: @fadeOutDown_Opacity_0;
+	    transform: translate3d(@fadeOutDown_No_Value, @fadeOutDown_Y, @fadeOutDown_No_Value);
+	  }
+	}

@@ -1,0 +1,58 @@
+// tweens_LIB/fadeIn/fadeInUpBig.less
+// =============================================================================
+    
+    //====================
+    //==== Property =====
+    //====================
+    @fadeInUpBig_0_value:   		0;
+    @fadeInUpBig_100_percent:   	2000px;
+    @fadeInUpBig_to:     			none;
+    @fadeInUpBig_opacity_0:			0;
+    @fadeInUpBig_opacity_1:			1;
+
+    //====================
+    //==== keyframe =====
+    //====================
+	@keyframes fadeInUpBig {
+	  from {
+	    transform: translate3d(@fadeInUpBig_0_value, @fadeInUpBig_100_percent, @fadeInUpBig_0_value);
+	  }
+
+	  to {
+	    transform: none;
+	  }
+	}
+
+	@keyframes fadeInUpBig_fadeIn {
+	  from {
+	    transform: translate3d(@fadeInUpBig_0_value, @fadeInUpBig_100_percent, @fadeInUpBig_0_value);
+	  }
+
+	  65%{
+	  	opacity:@fadeInUpBig_opacity_0;
+	  }
+
+	  to {
+	    opacity:@fadeInUpBig_opacity_1;
+	    transform: none;
+	  }
+	}
+
+	@keyframes fadeInUpBig_fadeOut {
+	  from {
+	    transform: translate3d(@fadeInUpBig_0_value, @fadeInUpBig_100_percent, @fadeInUpBig_0_value);
+	  }
+
+	  65%{
+	  	opacity:@fadeInUpBig_opacity_1;
+	  }
+
+	  to {
+	  	opacity:@fadeInUpBig_opacity_0;
+	    transform: none;
+	  }
+	}
+
+
+
+	

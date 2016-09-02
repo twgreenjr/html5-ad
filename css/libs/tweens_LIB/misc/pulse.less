@@ -1,0 +1,36 @@
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+// tweens_LIB/misc/pulse.less
+// =============================================================================
+    
+    //====================
+    //==== Property =====
+    //====================
+    @pulse_From_X: 	1;
+    @pulse_From_Y: 	1;
+    @pulse_From_Z: 	1;
+
+    @pulse_50_X: 	1.05;
+    @pulse_50_Y: 	1.05;
+    @pulse_50_Z: 	1.05;
+
+    @pulse_To_X: 	1;
+    @pulse_To_Y: 	1;
+    @pulse_To_Z: 	1;
+    
+
+    //====================
+    //==== keyframe =====
+    //====================
+	@keyframes pulse {
+	  from {
+	    transform: scale3d(@pulse_From_X, @pulse_From_Y, @pulse_From_Z);
+	  }
+
+	  50% {
+	    transform: scale3d(@pulse_50_X, @pulse_50_Y, @pulse_50_Z);
+	  }
+
+	  to {
+	    transform: scale3d(@pulse_To_X, @pulse_To_Y, @pulse_To_Z);
+	  }
+	}

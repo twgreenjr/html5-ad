@@ -1,0 +1,24 @@
+// tweens_LIB/fade/fadeOutRight.less
+// =============================================================================
+    
+    //====================
+    //==== Property =====
+    //====================
+    @fadeOutRight_Opacity_1:   			1;
+    @fadeOutRight_Opacity_0:     		0;
+    @fadeOutRight_X:     				100%;
+    @fadeOutRight_No_Value:     		0;
+
+    //====================
+    //==== keyframe =====
+    //====================
+	@keyframes fadeOutRight {
+	  from {
+	    opacity: @fadeOutRight_Opacity_1;
+	  }
+
+	  to {
+	    opacity: @fadeOutRight_Opacity_0;
+	    transform: translate3d(@fadeOutRight_X, @fadeOutRight_No_Value, @fadeOutRight_No_Value);
+	  }
+	}

@@ -1,0 +1,57 @@
+// tweens_LIB/misc/swing.less
+// =============================================================================
+    //====================
+    //==== Property =====
+    //====================
+    @swing_To_X:               0;
+    @swing_To_Y:               0;
+    @swing_To_Z:               1;
+    @swing_To_A:               0deg;
+
+    @swing_20_X:               0;
+    @swing_20_Y:               0;
+    @swing_20_Z:               1;
+    @swing_20_A:               15deg;
+
+    @swing_40_X:               0;
+    @swing_40_Y:               0;
+    @swing_40_Z:               1;
+    @swing_40_A:               -10deg;
+
+    @swing_60_X:               0;
+    @swing_60_Y:               0;
+    @swing_60_Z:               1;
+    @swing_60_A:               -10deg;
+
+    @swing_80_X:               0;
+    @swing_80_Y:               0;
+    @swing_80_Z:               1;
+    @swing_80_A:               -5deg;
+
+
+    
+
+    //====================
+    //==== keyframe =====
+    //====================
+@keyframes swing {
+  20% {
+    transform: rotate3d(@swing_20_X, @swing_20_Y, @swing_20_Z, @swing_20_A);
+  }
+
+  40% {
+    transform: rotate3d(@swing_40_X, @swing_40_Y, @swing_40_Z, @swing_40_A);
+  }
+
+  60% {
+    transform: rotate3d(@swing_60_X, @swing_60_Y, @swing_60_Z, @swing_60_A);
+  }
+
+  80% {
+    transform: rotate3d(@swing_80_X, @swing_80_Y, @swing_80_Z, @swing_80_A);
+  }
+
+  100% {
+    transform: rotate3d(@swing_To_X, @swing_To_Y, @swing_To_Z, @swing_To_A);
+  }
+}

@@ -1,0 +1,39 @@
+  // tweens_LIB/bounce/bounceInLeft.less
+  //====================
+  //==== Property =====
+  //====================
+  @bounceInLeft_0_percent:        -3000px;
+  @bounceInLeft_60_percent:         25px;
+  @bounceInLeft_75_percent:         -10px;
+  @bounceInLeft_90_percent:         5px;
+  @zero_Position:              0px;
+  @easePattern:               cubic-bezier(0.215, 0.610, 0.355, 1.000);
+
+  //====================
+  //==== keyframe =====
+  //====================
+  @keyframes bounceInLeft {
+    from, 60%, 75%, 90%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+      transform: translate3d(@bounceInLeft_0_percent, @zero_Position, @zero_Position);
+    }
+
+    60% {
+      transform: translate3d(@bounceInLeft_60_percent, @zero_Position, @zero_Position);
+    }
+
+    75% {
+      transform: translate3d(@bounceInLeft_75_percent, @zero_Position, @zero_Position);
+    }
+
+    90% {
+      transform: translate3d(@bounceInLeft_90_percent, @zero_Position, @zero_Position);
+    }
+
+    to {
+      transform: none;
+    }
+  }

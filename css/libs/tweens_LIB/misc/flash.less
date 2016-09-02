@@ -1,0 +1,20 @@
+// tweens_LIB/Misc/flash.less
+// =============================================================================
+    //====================
+    //==== Property =====
+    //====================
+    @flash_Opacity_0:            0;
+    @flash_Opacity_1:            1;
+
+    //====================
+    //==== keyframe =====
+    //====================
+	@keyframes flash {
+	  from, 50%, to {
+	    opacity:  @flash_Opacity_1;
+	  }
+
+	  25%, 75% {
+	    opacity: @flash_Opacity_0;
+	  }
+	}

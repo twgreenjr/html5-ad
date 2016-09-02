@@ -1,80 +1,74 @@
-// style.less
-// =============================================================================
-
-    @adWidth:   300px;
-    @adHeight:  250px;
-
-    html, body {
-        width: 100%;
-        height: 100%;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        -webkit-backface-visibility: hidden;
-    }
-
-    button {
-        background-color: #0068FF;
-        border: none;
-        color: #FFF;
-        cursor: pointer;
-        font-family: Arial, sans-serif;
-        font-size: 12px;
-        outline: none;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        user-select: none;
-
-        transition: all 350ms linear;
-
-        &:hover, &:active {
-            color: #FAF000;
-            background-color: #333;
-            transition: all 350ms linear;
-        }
-    }
-
-    .label {
-        color: #0D2A4D;
-        position: absolute;
-        margin-left: 10px;
-        top: 35px;
+    html,body{
+        margin:0;padding:0;
     }
 
     #ad {
+        position:absolute;
+        left:0;
+        top:0;
         width: @adWidth;
         height: @adHeight;
         display: block;
-        border: 1px solid #000;
-        overflow: hidden;
         user-select: none;
+        
+        
+            #banner{
+                position:absolute;
+                top:0;
+                left:0;
+                width:(@adWidth - 2);
+                height:(@adHeight - 2);
+                border:1px solid black;
+                overflow:hidden;
+               
+                
+                #greenBox{
+                    position:absolute;
+                    top: 0px;
+                    left:0;
+                    width: 50px;
+                    height: 50px;
+                    border:1px solid black;
+                    background: green;
+                    opacity: 0;
+                }
+                
+                // banner elements END
+
+                // animation - keyframes
+                &.MC_animation_playing{
+                    
+                    // animation Keyframes on specific elements go below.
+                         
+                        // frame 1
+                        & #greenBox{
+                            animation-name: fadeIn_100;
+                            animation-duration: 1s;
+                            animation-delay:0.2s;
+                            animation-fill-mode: forwards;
+                        }
+
+                    // ENDS
+        
+                }
+
+                &.MC_animation_endFrame{
+                    // add your default state for your elements here. 
+                    //when the banner is completed will add this to banner to create your end-frame
+                    #greenBox{opacity:1}
+                    // ENDS 
+                }
+
+
+
+             // banner
+            }
+
+    // ad
     }
 
-    #banner {
-        width: @adWidth;
-        height: @adHeight;
-        position: absolute;
-        display: block;
-        background: #fff url("../images/logo.png") 10px 10px no-repeat;
-        overflow: hidden;
-    }
 
-    .buttons {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-    }
-
-    .button {
-        height: 26px;
-        width: 108px;
-    }
-
-    .label {
-        font-size: 14px;
-        top: 65px;
-    }
-
-    .collapsed .buttons {
-        bottom: 30px;
-        left: 10px;
-    }
-
+    // Global Variables
+    @import "libs/MC_variables.less";
+    // Global KeyFrames
+    @import "libs/MC_keyframes.less";

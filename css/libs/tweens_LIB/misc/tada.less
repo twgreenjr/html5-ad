@@ -1,0 +1,68 @@
+// tweens_LIB/misc/tada.less
+// =============================================================================
+    //====================
+    //==== Property =====
+    //====================
+    
+    // Scale
+    @bounceIn_scale3d_From_X:         1;
+    @bounceIn_scale3d_From_Y:         1;
+    @bounceIn_scale3d_From_Z:         1;
+
+    @bounceIn_scale3d_To_X:           1;
+    @bounceIn_scale3d_To_Y:           1;
+    @bounceIn_scale3d_To_Z:           1;
+
+    @bounceIn_scale3d_10_20_X:        .9;
+    @bounceIn_scale3d_10_20_Y:        .9;
+    @bounceIn_scale3d_10_20_Z:        .9;
+
+    @bounceIn_scale3d_30_90_X:        1.1;
+    @bounceIn_scale3d_30_90_Y:        1.1;
+    @bounceIn_scale3d_30_90_Z:        1.1;
+
+    @bounceIn_scale3d_40_80_X:         1.1;
+    @bounceIn_scale3d_40_80_Y:         1.1;
+    @bounceIn_scale3d_40_80_Z:        1.1;
+
+    // Rotate
+    @bounceIn_rotate3d_10_20_X:        0;
+    @bounceIn_rotate3d_10_20_Y:        0;
+    @bounceIn_rotate3d_10_20_Z:        1;
+    @bounceIn_rotate3d_10_20_A:        -3deg;
+
+    @bounceIn_rotate3d_30_90_X:        0;
+    @bounceIn_rotate3d_30_90_Y:        0;
+    @bounceIn_rotate3d_30_90_Z:        1;
+    @bounceIn_rotate3d_30_90_A:        3deg;
+
+    @bounceIn_rotate3d_40_80_X:        0;
+    @bounceIn_rotate3d_40_80_Y:        0;
+    @bounceIn_rotate3d_30_90_Z:        1;
+    @bounceIn_rotate3d_40_80_A:        -3deg;
+    
+
+    //====================
+    //==== keyframe =====
+    //====================
+    @keyframes tada {
+      from {
+        transform: scale3d(@bounceIn_scale3d_From_X, @bounceIn_scale3d_From_Y, @bounceIn_scale3d_From_Z);
+      }
+
+      10%, 20% {
+        transform: scale3d(@bounceIn_scale3d_10_20_X, @bounceIn_scale3d_10_20_Y, @bounceIn_scale3d_10_20_Z) rotate3d(@bounceIn_rotate3d_10_20_X, @bounceIn_rotate3d_10_20_Y, @bounceIn_rotate3d_10_20_Z, @bounceIn_rotate3d_10_20_A);
+      }
+
+      30%, 50%, 70%, 90% {
+        transform: scale3d(@bounceIn_scale3d_30_90_X, @bounceIn_scale3d_30_90_Y, @bounceIn_scale3d_30_90_Z) rotate3d(@bounceIn_rotate3d_30_90_X, @bounceIn_rotate3d_30_90_Y, @bounceIn_rotate3d_30_90_Z, @bounceIn_rotate3d_30_90_A);
+      }
+
+      40%, 60%, 80% {
+        transform: scale3d(@bounceIn_scale3d_40_80_X, @bounceIn_scale3d_40_80_Y, @bounceIn_scale3d_40_80_X) rotate3d(@bounceIn_rotate3d_40_80_X, @bounceIn_rotate3d_30_90_Y, @bounceIn_rotate3d_30_90_Z, @bounceIn_rotate3d_30_90_A);
+      }
+
+      to {
+        transform: scale3d(@bounceIn_scale3d_To_X, @bounceIn_scale3d_To_Y, @bounceIn_scale3d_To_Z);
+      }
+    }

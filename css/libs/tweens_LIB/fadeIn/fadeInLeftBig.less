@@ -1,0 +1,27 @@
+// tweens_LIB/fadeIn/fadeInLeftBig.less
+// =============================================================================
+    
+    //====================
+    //==== Property =====
+    //====================
+    @fadeInLeftBig_0_value:   		0;
+    @fadeInLeftBig_100_percent:   	-2000px;
+    @fadeInLeftBig_to:     		none;
+    @fadeInLeftBig_opacity_0:		0;
+    @fadeInLeftBig_opacity_1:		1;
+
+
+    //====================
+    //==== keyframe =====
+    //====================
+	@keyframes fadeInLeftBig {
+	  from {
+	    transform: translate3d(@fadeInLeftBig_100_percent, @fadeInLeftBig_0_value, @fadeInLeftBig_0_value);
+	  }
+
+	  to {
+	    transform: @fadeInLeftBig_to;
+	  }
+	}
+
+	

@@ -1,0 +1,31 @@
+// tweens_LIB/fade/rotateOutDownRight.less
+// =============================================================================
+    
+    //====================
+    //==== Proprerty =====
+    //====================
+    @rotateOutDownRight_X:                    0;
+    @rotateOutDownRight_Y:                    0;
+    @rotateOutDownRight_Z:                    1;
+    @rotateOutDownRight_A:                    -45deg;
+    @rotateOutDownRight_transorginal_X:		right;
+    @rotateOutDownRight_transorginal_Y:		bottom;
+    @rotateOutDownRight_Opacity_0:			0;
+    @rotateOutDownRight_Opacity_1:			1;
+
+    //====================
+    //==== keyframe ======
+    //====================
+	@keyframes rotateOutDownRight {
+	  from {
+	    transform-origin: @rotateOutDownRight_transorginal_X @rotateOutDownRight_transorginal_Y;
+	    opacity: @rotateOutDownRight_Opacity_1;
+	  }
+
+	  to {
+	    transform-origin: @rotateOutDownRight_transorginal_X @rotateOutDownRight_transorginal_Y;
+	    transform: rotate3d(@rotateOutDownRight_X, @rotateOutDownRight_Y, @rotateOutDownRight_Z, @rotateOutDownRight_A);
+	    opacity: @rotateOutDownRight_Opacity_0;
+	  }
+	}
+

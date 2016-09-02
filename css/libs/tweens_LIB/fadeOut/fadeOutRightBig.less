@@ -1,0 +1,24 @@
+// tweens_LIB/fade/fadeOutRightBig.less
+// =============================================================================
+    
+    //====================
+    //==== Property =====
+    //====================
+    @fadeOutRightBig_Opacity_1:   	1;
+    @fadeOutRightBig_Opacity_0:     0;
+    @fadeOutRightBig_Y:     		2000px;
+    @fadeOutRightBig_No_Value:     	0;
+
+    //====================
+    //==== keyframe =====
+    //====================
+	@keyframes fadeOutRightBig {
+	  from {
+	    opacity: @fadeOutRightBig_Opacity_1;
+	  }
+
+	  to {
+	    opacity: @fadeOutRightBig_Opacity_0;
+	    transform: translate3d(@fadeOutRightBig_Y, @fadeOutRightBig_No_Value, @fadeOutRightBig_No_Value);
+	  }
+	}

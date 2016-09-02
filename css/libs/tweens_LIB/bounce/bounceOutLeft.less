@@ -1,0 +1,24 @@
+// tweens_LIB/bounce/bounceOutLeft.less
+// =============================================================================
+//====================
+    
+    //==== Property =====
+    //====================
+    @bounceOutLeft_to:          -2000px;
+    @bounceOutLeft_20_percent:    20px;
+    @bounceOutLeft_0_value:   0px;
+    //====================
+    
+    //==== keyframe =====
+    //====================
+    @keyframes bounceOutLeft {
+      20% {
+        opacity: 1;
+        transform: translate3d(@bounceOutLeft_20_percent, @bounceOutLeft_0_value, @bounceOutLeft_0_value);
+      }
+
+      to {
+        opacity: 0;
+        transform: translate3d(@bounceOutLeft_to, @bounceOutLeft_0_value, @bounceOutLeft_0_value);
+      }
+    }

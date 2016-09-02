@@ -1,0 +1,24 @@
+// tweens_LIB/fade/fadeOutLeftBig.less
+// =============================================================================
+    
+    //====================
+    //==== Property =====
+    //====================
+    @fadeOutLeftBig_Opacity_1:   		1;
+    @fadeOutLeftBig_Opacity_0:     		0;
+    @fadeOutLeft_X:     				-2000px;
+    @fadeOutLeft_No_Value:     			0;
+
+    //====================
+    //==== keyframe =====
+    //====================
+	@keyframes fadeOutLeftBig {
+	  from {
+	    opacity: @fadeOutLeftBig_Opacity_1;
+	  }
+
+	  to {
+	    opacity: @fadeOutLeftBig_Opacity_0;
+	    transform: translate3d(@fadeOutLeft_X, 0, 0);
+	  }
+	}

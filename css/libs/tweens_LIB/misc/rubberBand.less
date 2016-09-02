@@ -1,0 +1,70 @@
+// tweens_LIB/misc/rubberBand.less
+// =============================================================================
+    //====================
+    //==== Property =====
+    //====================
+    @swing_To_X:                1;
+    @swing_To_Y:                1;
+    @swing_To_Z:                1;
+
+    @swing_From_X:              1;
+    @swing_From_Y:              1;
+    @swing_From_Z:              1;
+
+    @swing_30_X:                1.25;
+    @swing_30_Y:                0.75;
+    @swing_30_Z:                1;
+
+    @swing_40_X:                0.75;
+    @swing_40_Y:                1.25;
+    @swing_40_Z:                1;
+
+    @swing_50_X:                1.15;
+    @swing_50_Y:                1.25;
+    @swing_50_Z:                1;
+
+    @swing_65_X:                .95;
+    @swing_65_Y:                1.05;
+    @swing_65_Z:                1;
+
+    @swing_75_X:                1.05;
+    @swing_75_Y:                .95;
+    @swing_75_Z:                1;
+
+    
+
+
+    
+
+    //====================
+    //==== keyframe =====
+    //====================
+    @keyframes rubberBand {
+      from {
+        transform: scale3d(@swing_From_X, @swing_From_Y, @swing_From_Z);
+      }
+
+      30% {
+        transform: scale3d(@swing_30_X, @swing_30_Y, @swing_30_Z);
+      }
+
+      40% {
+        transform: scale3d(@swing_40_X, @swing_40_Y, @swing_40_Z);
+      }
+
+      50% {
+        transform: scale3d(@swing_50_X, @swing_50_Y, @swing_50_Z);
+      }
+
+      65% {
+        transform: scale3d(@swing_65_X, @swing_65_Y, @swing_65_Z);
+      }
+
+      75% {
+        transform: scale3d(@swing_75_X, @swing_75_Y, @swing_75_Z);
+      }
+
+      to {
+        transform: scale3d(@swing_To_X, @swing_To_Y, @swing_To_A);
+      }
+    }
