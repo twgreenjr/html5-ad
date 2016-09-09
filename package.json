@@ -1,5 +1,6 @@
 {
   "name": "gulp-test",
+  "private": "true",
   "version": "0.0.1",
   "description": "Standard GULP standard Boilerplate",
   "main": "gulpfile.js",
