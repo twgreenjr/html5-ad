@@ -4,21 +4,12 @@
   "version": "0.0.1",
   "description": "Standard GULP standard Boilerplate",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp-htmlmin": "^2.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-ruby-sass": "^2.1.0",
-    "gulp-uglify": "^2.0.0"
-  },
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-htmlmin": "^2.0.0",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Manny Dasilva",
   "license": "ISC"
