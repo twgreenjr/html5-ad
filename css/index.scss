@@ -1,0 +1,64 @@
+@import 'keyframes';
+@import 'variables';
+
+
+
+
+ html,body{
+	margin:0;
+	padding:0;
+}
+
+#ad {
+    position:absolute;
+    left:0;
+    top:0;
+    width: $adWidth;
+    height: $adHeight;
+    display: block;
+    user-select: none;
+
+     #banner{
+                position:absolute;          // position will put element our of flow of document
+                top:0;                      // will set element top poition itself top 0;
+                left:0;                     // will set the element to be flush left
+                width:($adWidth - 2);       // will set width of element
+                height:($adHeight - 2);     // will set height of element
+                border:1px solid black;     // will set a border on element
+                overflow:hidden;            // setting Overflow:hidden will hide content outside of with/height
+
+                // default state for your html element
+                #greenBox{
+                    position:absolute;      // position will put element our of flow of document
+                    top: 0px;               // will set element top poition itself top 0;
+                    left:0;                 // will set the element to be flush left 
+                    width: 50px;            // will set width of element
+                    height: 50px;           // will set height of element
+                    border:1px solid black; // will put border on element
+                    background: green;      // set background color of element
+                    opacity: 0;             // set opacity of element
+                    transform: scale(1);    // set added scale of element
+                }
+
+                &.MC_animation_playing{
+
+                 	& #greenBox{
+                            animation-name: fadeIn_10;     // animation-name is the name of the keyframe to attach to the element
+                            animation-duration: 1s;         // duration is a how long animation will play.
+                            animation-delay:0.2s;           // delay will not run animation until specific time given         
+                            animation-fill-mode: forwards; 	// fill-mode will tell element to stay on endframe after animation has played.
+                    }
+
+                }
+
+
+
+
+
+
+
+
+
+    } //#banner ENDS
+} // #ad ENDS
+
