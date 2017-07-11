@@ -40,7 +40,7 @@ module.exports = function (grunt) {
                 tasks: ['build-sass'],
             },
             less: {
-                files: ['css/{,*/}*.less'],
+                files: ['css/**/*.less'],
                 tasks: ['build-less'],
             },
             index: {
